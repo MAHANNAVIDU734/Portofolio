@@ -1,0 +1,7 @@
+.projects__section {
+    display: flex;
+    padding: 30px;
+}
+.projects {
+    align: center;
+}

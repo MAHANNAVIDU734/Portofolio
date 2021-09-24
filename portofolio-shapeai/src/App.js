@@ -1,13 +1,22 @@
 import './App.css';
 import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
-import {Route} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+
 
 function App() {
   return (
     <div className="App">
-      <Route path='/' exact component={Home} />
-      <Route path='/Contact' exact component={Contact}/>
+    <Router>
+    <Switch>
+      <Route path='/'>
+      <Home />
+      </Route>
+      <Route path='/Contact' >
+      <Contact/>
+      </Route>
+    </Switch>
+    </Router>
     </div>
   );
 }

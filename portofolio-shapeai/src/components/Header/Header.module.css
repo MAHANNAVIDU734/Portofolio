@@ -1,0 +1,28 @@
+.header__left {
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 5vw;
+    margin-right: 15px;
+    font-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 100;
+    width: 100%;
+    color: white;
+}
