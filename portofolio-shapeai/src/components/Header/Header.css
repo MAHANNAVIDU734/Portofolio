@@ -6,7 +6,8 @@
     align-items: center;
 }
 
-.menu__bars {
+
+.navbar > .navbar__left >.menu__bars {
     margin-left: 3rem;
     font-size: 2rem;
     background: none;
@@ -73,6 +74,29 @@ span{
 }
 
 .navbar__center {
-    justify-context: center;
+    margin-left: 38rem;
     color: white;
+    align-items: center;
+}
+
+.navbar__right {
+    margin-left: 40rem;
+}
+
+@media sceeen and (max-width: 1150px) {
+    .navbar__center {
+        margin-left: 450rem;
+    }
+}
+
+@media sceeen and (max-width: 820px) {
+    .navbar__center {
+        margin-left: 750rem;
+    }
+}
+
+@media sceeen and (max-width: 720px) {
+    .navbar__center {
+        margin-left: 1000rem;
+    }
 }

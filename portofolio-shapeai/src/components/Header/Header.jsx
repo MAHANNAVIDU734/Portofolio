@@ -1,6 +1,6 @@
 import React,{ useState } from 'react';
 import "./Header.css";
-// import { Avatar } from "@material-ui/core";
+import { Avatar } from "@material-ui/core";
 import { Link } from 'react-router-dom';
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
@@ -16,10 +16,17 @@ function Header() {
     <>
     <IconContext.Provider value={{color: '#fff'}}>
     <div className='navbar'>
-      <div className="navbar__center"><h1>Portofilio</h1></div>
+      <div className="navbar__left">
       <Link to="#" className="menu__bars">
           <FaIcons.FaBars onClick={showSidebar} />
       </Link>
+      </div>
+       <div className="navbar__center">
+       <h1>Portofilio</h1>
+       </div>
+       <div className="navbar__right">
+       <Avatar />
+       </div>
       </div>
       <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
       <ul className="nav-menu-items" onClick={showSidebar}>

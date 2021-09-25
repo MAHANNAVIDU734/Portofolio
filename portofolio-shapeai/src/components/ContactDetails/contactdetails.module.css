@@ -1,0 +1,47 @@
+.contactdetails {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  text-align: center;
+  background-color: #2196F3;
+  padding: 10px;
+  grid-gap: 50px 100px;
+}
+
+
+.Email {
+    flex-column-start: 1;
+    flex-column-end: 2;
+}
+
+.contactdetails > Email {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.contactdetails > Github {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.contactdetails > Phoneno {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.contactdetails > Facebook {
+    background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.contactdetails > LinkedIn {
+    background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
